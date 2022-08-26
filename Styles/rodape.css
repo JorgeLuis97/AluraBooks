@@ -1,0 +1,67 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background: #FFFFFF;
+    width: 100%;
+    
+}
+
+.rodape__titulo {
+    padding: 1.5em;
+    font-family: 'Poppins';
+
+}
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        top: 100%;
+    }
+
+    .lista-rodape__titulo {
+        color: var(--cor-da-fonte-rodape-secundaria);
+        font-family: var(--fonte-principal);
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 1em auto;
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--cor-da-fonte-rodape);
+        margin-left: 1em;
+        font-size: 14px;
+        font-family: var(--fonte-principal);
+    }
+
+    .lista-rodape {
+        display: block;
+        margin: 2em auto;
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodape {
+        border-left: 1px solid lightgray;
+        padding-left: 1.5em;
+    }
+
+    .rodape {
+        padding: 3em 0;
+    }
+}
